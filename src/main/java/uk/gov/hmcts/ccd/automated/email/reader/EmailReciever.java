@@ -137,10 +137,8 @@ public class EmailReciever {
                     keywords.add(listOfKeywords.get(i).getAsString());
                 }
 
-                //String userName = "alex.ross@HMCTS.net";
                 String userName =  details.get("username").getAsString();
                 String password =  details.get("password").getAsString();
-                //String password = "B873^/keRenU@2j";
                 Integer interval = details.get("intervalTimer").getAsInt();
 
                 EmailReciever receiver = new EmailReciever();
